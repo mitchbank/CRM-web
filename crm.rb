@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-	"Main menu"
+	rb :index
 end
