@@ -1,0 +1,43 @@
+header {
+	height: 80px;
+	background: #3a5795;
+	font-family: arial black;
+	margin: 0;
+}
+
+header h1 {
+	padding-left: 40px;
+	padding-top: 15px;
+	color: white;
+	margin: 0;
+}
+
+.welcome {
+	color: #333333
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(white, #D3D8E8);
+}
+
+.yield {
+	padding-left: 20px;
+}
+
+footer {
+	padding-left: 20px;
+	background: #fdfdfe
+}
+
+h2 {
+	color: #333333;
+}
+
+p {
+	color: #333333;
+}
+
+nav {
+	color: #333333
+}
