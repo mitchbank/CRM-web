@@ -27,6 +27,18 @@ post '/contacts' do
 end
 
 get '/contacts/:id' do 
-	@contact = $rolodex.find(params[:id].to_i)
-	erb :show_contact
+		if @contact = $rolodex.find(params[:id].to_i)
+		erb :show_contact
+	else
+		raise Sinatra::NotFound
+	end
+end
+
+get '/contacts/:id/edit' do 
+	if @contact = $rolodex.find(params[:id].to_i)
+		erb :edit_contact
+	else
+		raise Sinatra::NotFound
+		redirect to('/contacts')
+	end
 end
