@@ -11,8 +11,4 @@ class Contact
 	def full_name
 		first_name + " " + last_name		
 	end
-
-	# def modify(contact)
-		
-	# end
 end
