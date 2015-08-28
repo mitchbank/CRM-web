@@ -3,11 +3,10 @@
 <p><strong>Note:</strong></p>
 <p><%= @contact.notes %></p>
 
-<form action="/contacts/<%= @contact.id %>/edit/" method="get">
-		<input type="submit" value="Edit Contact">
-</form>
+<a href="/contacts/<%= @contact.id %>/edit">Edit Contact</a>
 
-<form action="/contacts/<%= @contact.id %>/" method="post" >
+
+<form action="/contacts/<%= @contact.id %>" method="post" >
 	<input type="hidden" name="_method" value="delete">
-	<input type="submit" name="Delete Contact" value="Delete">
+	<input type="submit" value="Delete">
 </form>
