@@ -1,13 +1,14 @@
 header {
 	height: 80px;
 	background: #3a5795;
-	font-family: arial black;
+	font-family: facebook letter faces;
 	margin: 0;
+	letter-spacing: 1pt;
 }
 
 header h1 {
 	padding-left: 40px;
-	padding-top: 15px;
+	padding-top: 23px;
 	color: white;
 	margin: 0;
 }
@@ -19,6 +20,7 @@ header h1 {
 body {
 	margin: 0;
 	background: linear-gradient(white, #D3D8E8);
+	font-family: helvetica;
 }
 
 .yield {

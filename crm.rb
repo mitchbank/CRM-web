@@ -3,12 +3,12 @@ require_relative 'contact'
 require 'sinatra'
 
 $rolodex = Rolodex.new
-$rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny.bravo@hotmail.com", "prrrrretty mama"))
+# $rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny.bravo@hotmail.com", "prrrrretty mama"))
 
 contact = $rolodex.find(1000)
 
 get '/' do
-	@crm_app_name = "My CRM"
+	@crm_app_name = "Mitchbook"
 	erb :index
 end
 
